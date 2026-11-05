@@ -13,10 +13,12 @@
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#070709">
 
-  <!-- Fontes Google -->
+  <!-- Fontes Google & Tipografia Oficial -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://db.onlinewebfonts.com">
+  <link href="https://db.onlinewebfonts.com/c/657bc16f9d9e1138aedc238e69ff1983?family=MoonTime" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -51,7 +53,8 @@
           },
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            script: ['"Great Vibes"', 'cursive']
+            script: ['"MoonTime"', '"Moon Time"', '"Great Vibes"', 'cursive'],
+            moontime: ['"MoonTime"', '"Moon Time"', '"Great Vibes"', 'cursive']
           },
           boxShadow: {
             'gold-glow': '0 0 35px -5px rgba(246, 200, 68, 0.32)',
@@ -65,6 +68,20 @@
   </script>
 
   <style>
+    @font-face {
+      font-family: 'MoonTime';
+      src: url('https://db.onlinewebfonts.com/t/657bc16f9d9e1138aedc238e69ff1983.woff2') format('woff2'),
+           url('https://db.onlinewebfonts.com/t/657bc16f9d9e1138aedc238e69ff1983.woff') format('woff'),
+           url('https://db.onlinewebfonts.com/t/657bc16f9d9e1138aedc238e69ff1983.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    .font-moontime {
+      font-family: 'MoonTime', 'Moon Time', 'Great Vibes', cursive;
+    }
+
     body {
       background-color: #070709;
       color: #E2E8F0;
@@ -231,8 +248,8 @@
         <div class="relative w-12 h-12 flex items-center justify-center bg-white rounded-xl border border-brand-gold/60 p-1 shadow-lg shadow-brand-gold/20 group-hover:border-brand-gold group-hover:scale-105 transition duration-300 overflow-hidden">
           <img src="logo.png" alt="Moura's Posicionamento Digital" class="w-full h-full object-contain transition duration-300">
         </div>
-        <div class="flex flex-col">
-          <span class="font-script text-2xl text-white tracking-wide -mb-1 leading-none">Moura's</span>
+        <div class="flex flex-col justify-center">
+          <span class="font-moontime text-3xl sm:text-4xl text-white tracking-wider -mb-1 leading-none font-normal">Moura's</span>
           <span class="text-[9px] uppercase tracking-[0.26em] text-brand-gold font-bold">Posicionamento Digital</span>
         </div>
       </a>
@@ -1052,9 +1069,9 @@
         <div class="w-12 h-12 rounded-xl bg-white border border-brand-gold/60 flex items-center justify-center p-1 shadow-md shadow-brand-gold/15">
           <img src="logo.png" alt="Moura's Posicionamento Digital" class="w-full h-full object-contain">
         </div>
-        <div>
-          <span class="font-script text-2xl text-white">Moura's</span>
-          <span class="text-[8px] uppercase tracking-widest text-brand-gold font-bold block -mt-1">Posicionamento Digital</span>
+        <div class="flex flex-col justify-center">
+          <span class="font-moontime text-3xl sm:text-4xl text-white tracking-wider block -mb-1 leading-none font-normal">Moura's</span>
+          <span class="text-[8px] uppercase tracking-widest text-brand-gold font-bold block">Posicionamento Digital</span>
         </div>
       </div>
 
